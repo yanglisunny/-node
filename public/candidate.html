@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>候选人</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="headerContainer"></div>
+	<div id="candiContainer" class="container">
+		<button type="button" id="newBtn"  class="btn btn-primary"  data-target="#addCandidateModel">新增候选人</button>
+		<table class="table table-striped" style="margin-top:20px;">
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>求职职位</th>
+					<th>姓名</th>
+					<th>工作时间</th>
+					<th>薪资范围</th>
+					<th>专业</th>
+					<th>照片</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="tbody"></tbody>
+		</table>
+		<nav aria-label="Page navigation">
+	  		<ul class="pagination" id="pagination"></ul>
+		</nav>
+	</div>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common/header/login.js"></script>
+    <script src="/js/common/header/register.js"></script>
+    <script src="/js/common/header/header.js"></script>
+     <script src="/js/pages/candidate/pagination.js"></script>
+    <script src="/js/pages/candidate/candidateList.js"></script>
+    <script src="/js/pages/candidate/addCandidate.js"></script>
+    <script src="/js/pages/candidate/page.js"></script>
+    <script>
+        //入口
+        var page = new Page($("#headerContainer"), $("#candiContainer"));
+        page.init();
+    </script>
+</body>
+</html>

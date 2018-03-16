@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>职位管理</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="headerContainer"></div>
+	<div id="listContainer" class="container">
+		<button type="button" id="newBtn"  class="btn btn-primary"  data-target="#addPositionModel">新增职位</button>
+		<table class="table table-striped" style="margin-top:20px;">
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>职位名称</th>
+					<th>logo</th>
+					<th>公司</th>
+					<th>薪资范围</th>
+					<th>工作地点</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<nav aria-label="Page navigation">
+	  		<ul class="pagination" id="pagination"></ul>
+		</nav>
+	</div>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common/header/login.js"></script>
+    <script src="/js/common/header/register.js"></script>
+    <script src="/js/common/header/header.js"></script>
+    <script src="/js/pages/list/addPosition.js"></script>
+     <script src="/js/pages/list/pagination.js"></script>
+    <script src="/js/pages/list/tableList.js"></script>
+    <script src="/js/pages/list/page.js"></script>
+    <script>
+        //入口
+        var page = new Page($("#headerContainer"),$("#listContainer"));
+        page.init();
+    </script>
+</body>
+</html>

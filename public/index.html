@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div id="headerContainer"></div>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common/header/login.js"></script>
+    <script src="/js/common/header/register.js"></script>
+    <script src="/js/common/header/header.js"></script>
+    <script src="/js/pages/index/page.js"></script>
+    <script>
+        //入口
+        var page = new Page($("#headerContainer"));
+        page.init();
+
+    </script>
+</body>
+</html>
